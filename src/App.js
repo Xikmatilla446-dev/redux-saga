@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 
 import Header from './components/header/Header';
 import ImageGrid from './components/image/ImageGrid';
-
+import Carousel from './components/carousel/Carousel';
 
 import configureStore from './store';
 
@@ -16,6 +16,7 @@ class App extends Component {
         <Provider store={store}>
             <Fragment>
                 <Header />
+                <Carousel/>
                 <ImageGrid />
             </Fragment>
           </Provider>

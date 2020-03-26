@@ -13,6 +13,7 @@ function* handleImagesLoad() {
         const images = yield call(fetchImages, page);
         yield put(setImages(images));
 
+
     }catch (error) {
         //dispatch error
         debugger

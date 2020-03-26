@@ -14,29 +14,27 @@ const setError = error => ({
     error
 });
 
+const loadImageStats = ()=> ({
 
-const loadImagesStats = id => ({
-    type: STATS.LOAD,
-    id
+    type: STATS.LOAD_CAROUSEL,
 });
 
-const setImagesStats = (id, dowloads) => ({
-    type: STATS.LOAD_SUCCESS,
-    id,
-    dowloads,
+const setImageStats = (images) => ({
+    type: STATS.CAROUSEL_LOAD_SUCCESS,
+    images
 });
 
-const setImageStatsError = id => ({
-    type: STATS.LOAD_FAIL,
-    id
+const setImageStatsError = (error) => ({
+    type: STATS.CAROUSEL_LOAD_FAIL,
+    error
 });
 
 export {
     loadImages,
     setImages,
     setError,
-    loadImagesStats,
-    setImagesStats,
+    loadImageStats,
+    setImageStats,
     setImageStatsError
 };
 
