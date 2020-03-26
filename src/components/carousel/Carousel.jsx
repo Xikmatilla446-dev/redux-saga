@@ -16,7 +16,7 @@ const Carousel = ({loadingCarousel, imageStats, errorCarousel, loadStats}) => {
 
 
     useEffect(() => {
-        debugger
+        // debugger
         loadStats();
 
     },[]);
@@ -71,12 +71,15 @@ const Carousel = ({loadingCarousel, imageStats, errorCarousel, loadStats}) => {
 
                                       />
                                       <div className="card-body">
-                                          <h5 className="card-title">
-                                              {image.title}
+                                          <h5 className="card-title"
+                                              style={{color:image.color}}
+                                          >
+                                              {image.description}
                                           </h5>
                                           <small className="card-text text-sm-center text-muted">In your contacts</small>
                                           <br/>
-                                          <button className="btn btn-sm follow btn-primary">Follow</button>
+                                          <button className="btn btn-sm follow btn-primary"
+                                          >Follow</button>
                                       </div>
                                   </div>
 

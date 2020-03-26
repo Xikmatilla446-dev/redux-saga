@@ -31,7 +31,7 @@ const fetchImageStats = async() => {
     let res = [];
     await axios.get(`${urlCarusel}${KEY}&per_page=82`)
         .then(response => {
-            debugger
+            // debugger
             res = response.data.results;
             console.log(response.data.results)
         })
@@ -40,7 +40,7 @@ const fetchImageStats = async() => {
         });
 
 
-    debugger
+    // debugger
     return res
 
 };
